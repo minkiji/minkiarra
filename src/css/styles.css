@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background-size: 40px 40px;
+  background-image:
+    linear-gradient(to right, rgba(128, 128, 128, 0.045) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(128, 128, 128, 0.045) 1px, transparent 1px);
+}
+
+body {
+  scroll-behavior: smooth;
+}
+
+main {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.section-1 {
+  width: 75%;
+  margin: 0 auto;
+  margin-top: 150px;
+}
+
+.top-btn button {
+  padding: 10px 15px;
+  border-radius: 50px;
+  border: 1px solid #F8A8C5;
+  background: none;
+  color: #000000;
+  font-style: italic;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.top-btn button:hover {
+  color: #ffffff;
+  background-color: #F8A8C5;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.introduction-container {
+  line-height: 1.5;
+}
+
+.introduction-container h1 {
+  font-size: 50px;
+  font-weight: 900;
+  color: #F8A8C5;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.intro-style {
+  color: #F8A8C5;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.introduction-container p {
+  max-width: 58ch;
+  font-size: 16px;
+}
+
+#gap-paragraph {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#socials-gap {
+  margin-bottom: 12px;
+}
+
+.chaewon img {
+  width: 600px;
+}
+
+.socials ul {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.socials ul li {
+  list-style: none;
+}
+
+.socials ul li a {
+  text-decoration: none;
+  color: #F8A8C5;
+  font-size: 30px;
+  transition: 0.3s;
+}
+
+.socials ul li a:hover {
+  opacity: 0.7;
+}
+
+.socials ul li a:active {
+  opacity: 0.3;
+}
+
+/* some things i built */
+
+.section-2 {
+  width: 75%;
+  margin: 0 auto;
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+
+.main-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+  color: #F8A8C5;
+  opacity: 0;
+  transition: 1s ease;
+}
+
+.paragraph {
+  position: relative;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.40);
+  z-index: 1;
+  opacity: 0;
+  transition: 1s ease;
+}
+
+.paragraph--visible {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.paragraph::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: transparent;
+  border-radius: 5px;
+  transition: transform 0.2s, background-color 0.2s;
+  z-index: -1;
+}
+
+.paragraph:hover::before {
+  transform: scale(1.07);
+  background-color: #fcc5db;
+}
+
+.paragraph p {
+  line-height: 1.5;
+  max-width: 72ch;
+  font-size: 14px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.paragraph ul {
+  display: flex;
+  gap: 15px;
+}
+
+.paragraph ul li {
+  list-style: none;
+  font-size: 12px;
+  background-color: #F8A8C5;
+  padding: 5px 10px;
+  border-radius: 50px;
+}

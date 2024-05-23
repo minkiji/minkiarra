@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arra</title>
+  <link rel="icon" href="/img/yujin-glasses.png">
+  <link rel="stylesheet" href="/src/css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <main>
+
+    <section class="section-1">
+
+      <div class="container">
+        <div class="introduction-container">
+          <div class="top-btn">
+            <button>Need Help with coding or your projects?</button>
+          </div>
+          <h1>Hi, I'm Minki.</h1>
+          <p>I enjoy bringing random ideas to life through coding and have a strong passion for designing</p>
+          <p id="gap-paragraph">I've recently been learning about <span class="intro-style">Tailwind, Javascript,
+              UI/UX</span><br>
+            I like both <span class="intro-style">kpop</span> and <span class="intro-style">metal</span>, and think
+            An Yu-jin everyday for better days.</p>
+          <p id="socials-gap">I'm currently based in Philippines, Tarlac.</p>
+            <div class="socials">
+              <ul>
+                <li><a href="https://www.facebook.com/arracode" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.instagram.com/minki.artist/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                <li><a href="https://x.com/minkiarra" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a href="https://github.com/minkiji" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+              </ul>
+            </div>
+        </div>
+        <div class="chaewon">
+          <img src="/img/chaewon-hello1.png" alt="chaewon-hello">
+        </div>
+      </div>
+
+    </section>
+
+    <section class="section-2">
+
+      <div class="header">
+        <h2>Some things I've Built</h2>
+      </div>
+
+      <div class="main-container">
+
+        <div class="paragraph">
+          <h3><a style="color: black;" href="#" target="_blank">IVE World Tour Site</a></h3>
+          <p>This site is dedicated to promoting IVE's world tour and their new comeback. Stay updated with tour dates,
+            news, and exclusive content. Thank you for your support!</p>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Javascript</li>
+          </ul>
+        </div>
+
+        <div class="paragraph">
+          <h3><a style="color: black;" href="#" target="_blank">IVE World Tour Site</a></h3>
+          <p>This site is dedicated to promoting IVE's world tour and their new comeback. Stay updated with tour dates,
+            news, and exclusive content. Thank you for your support!</p>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Javascript</li>
+          </ul>
+        </div>
+
+        <div class="paragraph">
+          <h3><a style="color: black;" href="#" target="_blank">IVE World Tour Site</a></h3>
+          <p>This site is dedicated to promoting IVE's world tour and their new comeback. Stay updated with tour dates,
+            news, and exclusive content. Thank you for your support!</p>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Javascript</li>
+          </ul>
+        </div>
+
+        <div class="paragraph">
+          <h3><a style="color: black;" href="#" target="_blank">IVE World Tour Site</a></h3>
+          <p>This site is dedicated to promoting IVE's world tour and their new comeback. Stay updated with tour dates,
+            news, and exclusive content. Thank you for your support!</p>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Javascript</li>
+          </ul>
+        </div>
+
+
+      </div>
+
+    </section>
+
+
+  </main>
+
+  <script>
+
+    const paragraphs = document.querySelectorAll(".paragraph , .header");
+
+    document.addEventListener("scroll", function(){
+      paragraphs.forEach((paragraph) => {
+        if (isInView(paragraph)) {
+          paragraph.classList.add("paragraph--visible");
+        }
+      })
+    })
+
+    function isInView(element) {
+      const rect = element.getBoundingClientRect();
+      return (
+        rect.bottom > 0 &&
+        rect.top <
+        (window.innerheight - 150 || document.documentElement.clientHeight - 150)
+      )
+    }
+
+  </script>
+
+</body>
+
+</html>
