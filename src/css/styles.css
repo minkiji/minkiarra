@@ -783,6 +783,31 @@ main {
     width: auto;
   }
 
+  .movies {
+    max-width: min-content;
+  }
+
+  .movies img {
+    width: 370px;
+  }
+
+
+  @media (max-width: 535px) {
+
+    .anime-header {
+      font-size: 15px;
+      white-space: nowrap;
+    }
+
+    .movies {
+      max-width: min-content;
+    }
+  
+    .movies img {
+      width: 350px;
+    }
+  
+  }
 }
 
 
