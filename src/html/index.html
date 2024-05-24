@@ -23,7 +23,7 @@
           <div class="top-btn">
             <button>Need Help with coding or your projects?</button>
           </div>
-          <h1>Hi, I'm Minki.</h1>
+          <h1>Hi, I'm Arra.</h1>
           <p>I enjoy bringing random ideas to life through coding and have a strong passion for designing</p>
           <p id="gap-paragraph">I've recently been learning about <span class="intro-style">Tailwind, Javascript,
               UI/UX</span><br>
@@ -46,10 +46,36 @@
 
     </section>
 
-    <section class="section-2">
+  
+    <section class="skills">
+
+      <div class="header-skills">
+        <h2>Skills</h2>
+        <h3><i style="font-size: 14px; margin-right: 7px;" class="fa fa-desktop" aria-hidden="true"></i>Software</h3>
+        <hr>
+      </div>
+
+      <div class="skills-container">
+        <div class="software">
+          <ul>
+            <li><img style="width: 20px; margin: 7px;" src="/img/html.png" alt="">HTML</li>
+            <li><img style="width: 15px; margin: 7px;" src="/img/css.png" alt="">CSS</li>
+            <li><img style="width: 20px; margin: 7px;" src="/img/javascript.png" alt="">Javascript</li>
+            <li><img style="width: 20px; margin: 7px;" src="/img/twcss.png" alt="">Tailwind CSS</li>
+            <li><img style="width: 20px; margin: 7px;" src="/img/figma.png" alt="">Figma</li>
+            <li><img style="width: 15px; margin: 7px;" src="/img/google.png" alt="">Google Sheets</li>
+          </ul>
+        </div>
+      </div>
+
+
+    </section>
+
+
+    <section class="projects">
 
       <div class="header">
-        <h2>Some things I've Built</h2>
+        <h2>Projects</h2>
       </div>
 
       <div class="main-container">
@@ -103,12 +129,49 @@
 
     </section>
 
+    <section class="anime">
+      
+      <div class="anime-header">
+        <h2>Anime Movies that I'd recommend</h2>
+      </div>
+
+    <div class="movies-container">
+
+      <div class="movies">
+        <img src="/img/a whisker away.jpg" alt="A Whisker Away">
+        <h3>A Whisker Away</h3>
+        <p>A normal girl who can become a cat, has family issues, and once she falls in love with her reticent classmate, Kento Hinode. It is the story of their daily lives influenced by magic from a different world.</p>
+        <a href="#"><button>Watch Here</button></a>
+      </div class="movies">
+
+      <div class="movies">
+        <img src="/img/weathering with you.png" alt="Weathering With You">
+        <h3>Weathering With You</h3>
+        <p>Set during a period of exceptionally rainy weather, high-school boy Hodaka Morishima runs away from his troubled rural home to Tokyo and befriends an orphan girl who can manipulate the weather.</p>
+        <a href="#"><button>Watch Here</button></a>
+      </div>
+
+      <div id="movie-center" class="movies">
+        <img src="/img/the anthem of the heart.jpg" alt="The Anthem of the Heart">
+        <h3>The Anthem of the Heart</h3>
+        <p>A girl who carries the guilt of breaking up her family with carelessly uttered words when she was young is suddenly cursed by a mysterious Egg Fairy so that she can never hurt anybody with her words again.</p>
+        <a href="#"><button>Watch Here</button></a>
+      </div>
+
+    </div>
+
+      <div class="old-website">
+        <p>Looking for the old site? It's still up on <a href="https://minkiji.github.io/arra" target="_blank"><b>minkiji.github.io/arra</b></a></p>
+      </div>
+
+    </section>
+
 
   </main>
 
   <script>
 
-    const paragraphs = document.querySelectorAll(".paragraph , .header");
+    const paragraphs = document.querySelectorAll(".paragraph , .header , .header-skills , .software , .old-website");
 
     document.addEventListener("scroll", function(){
       paragraphs.forEach((paragraph) => {

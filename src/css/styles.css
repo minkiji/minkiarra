@@ -109,9 +109,56 @@ main {
   opacity: 0.3;
 }
 
+/* skills */
+
+.skills {
+  width: 75%;
+  margin: 0 auto;
+  margin-top: 150px;
+}
+
+.header-skills {
+  color: #F8A8C5;
+  opacity: 0;
+  transition: 1s ease;
+}
+
+.skills hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.header-skills h3 {
+  margin-top: 20px;
+}
+
+.software {
+  opacity: 0;
+  transition: 1s ease;
+}
+
+.software ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.software ul li {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  background-color: #ffffff;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.40);
+  padding: 10px;
+  padding-right: 150px;
+  border-radius: 5px;
+  width: 169.4px;
+}
+
 /* some things i built */
 
-.section-2 {
+.projects {
   width: 75%;
   margin: 0 auto;
   margin-top: 150px;
@@ -127,10 +174,7 @@ main {
 }
 
 .header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 50px;
+  margin-bottom: 35px;
   color: #F8A8C5;
   opacity: 0;
   transition: 1s ease;
@@ -190,3 +234,555 @@ main {
   padding: 5px 10px;
   border-radius: 50px;
 }
+
+/* anime */
+
+.anime {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.anime-header {
+  color: #F8A8C5;
+  margin-bottom: 35px;
+}
+
+.movies-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 150px;
+}
+
+.movies {
+  margin-bottom: auto;
+  background: #ffffff;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.40);
+  border-radius: 5px;
+}
+
+.movies img {
+  width: 440px;
+  height: 250px;
+  object-fit: cover;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+.movies h3 {
+  margin: 10px;
+}
+
+.movies p {
+  font-size: 14px;
+  line-height: 1.5;
+  max-width: 48ch;
+  margin: 10px;
+}
+
+.movies img:hover {
+  filter: brightness(80%);
+}
+
+.movies button {
+  color: black;
+  background-color: #F8A8C5;
+  border: none;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.movies button:hover {
+  opacity: 0.8;
+}
+
+.movies button:active {
+  opacity: 0.3;
+}
+
+.old-website {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.old-website p, .old-website a {
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.old-website a {
+  color: #F8A8C5;
+}
+
+@media (max-width: 2000px) {
+
+  .software ul li {
+    width: 280px;
+    white-space: nowrap;
+  }
+
+}
+
+@media (max-width: 1860px) {
+
+  .paragraph p {
+    max-width: 69ch;
+  }
+
+  .software ul li {
+    width: 270px;
+  }
+
+}
+
+@media (max-width: 1790px) {
+
+  .paragraph p {
+    max-width: 65ch;
+  }
+
+  .software ul li {
+    width: 250px;
+  }
+
+}
+
+@media (max-width: 1760px) {
+
+  .software ul li {
+    width: 235px;
+  }
+
+}
+
+@media (max-width: 1690px) {
+
+  .paragraph p {
+    max-width: 60ch;
+  }
+
+  .software ul li {
+    width: 220px;
+  }
+
+}
+
+@media (max-width: 1600px) {
+
+  .paragraph p {
+    max-width: 57ch;
+  }
+
+  .software ul li {
+    width: 210px;
+  }
+
+}
+
+@media (max-width: 1550px) {
+
+  .paragraph p {
+    max-width: 55ch;
+  }
+
+  .software ul li {
+    width: 200.3px;
+  }
+
+  .movies {
+    width: min-content;
+  }
+
+  .movies img {
+    width: 370px;
+  }
+
+}
+
+@media (max-width: 1520px) {
+
+  .software ul li {
+    width: 190px;
+  }
+
+  .movies {
+    width: min-content;
+  }
+
+  .movies img {
+    width: 350px;
+  }
+
+}
+
+@media (max-width: 1470px) {
+
+  .software ul li {
+    width: 170px;
+  }
+
+}
+
+@media (max-width: 1460px) {
+
+  .paragraph p {
+    max-width: 50ch;
+  }
+
+  .movies {
+    max-width: 37ch;
+  }
+
+  .chaewon img {
+    width: min-content;
+  }
+
+  .movies img {
+    width: 330px;
+  }
+
+}
+
+@media (max-width: 1390px) {
+
+  .software ul li {
+    width: 150px;
+  }
+
+}
+
+@media (max-width: 1390px) {
+
+  .movies-container {
+    gap: 50px;
+  }
+
+  .movies {
+    max-width: min-content;
+  }
+
+  .movies img {
+    width: 470px;
+  }
+
+  #movie-center {
+    margin: 0 auto;
+  }
+
+}
+
+@media (max-width: 1340px) {
+
+  .paragraph p {
+    max-width: 45ch;
+  }
+
+  .movies {
+    max-width: min-content;
+  }
+
+  .movies img {
+    width: 440px;
+  }
+
+}
+
+@media (max-width: 1310px) {
+
+  .paragraph p {
+    max-width: 45ch;
+  }
+
+  .software ul li {
+    width: 130px;
+  }
+
+  .chaewon img {
+    width: 450px;
+  }
+
+  .movies {
+    max-width: min-content;
+  }
+
+  .movies img {
+    width: 420px;
+  }
+
+}
+
+@media (max-width: 1230px) {
+
+  .main-container {
+    flex-direction: column;
+  }
+
+  .paragraph p {
+    max-width: 100ch;
+  }
+
+  .software ul li {
+    width: 270px;
+  }
+
+  .movies {
+    max-width: min-content;
+  }
+
+  .movies img {
+    width: 390px;
+  }
+
+}
+
+@media (max-width: 1180px) {
+
+  .top-btn button {
+    font-size: 12px;
+  }
+
+  .introduction-container h1 {
+    font-size: 45px;
+  }
+
+  .introduction-container p {
+    font-size: 14px;
+  }
+
+  .main-container {
+    flex-direction: column;
+  }
+
+  .paragraph p {
+    max-width: 100ch;
+  }
+
+  .software ul li {
+    width: 250px;
+  }
+
+  .movies {
+    max-width: 37ch;
+  }
+
+  .movies img {
+    width: 370px;
+  }
+
+}
+
+@media (max-width: 1130px) {
+
+  .main-container {
+    flex-direction: column;
+  }
+
+  .paragraph p {
+    max-width: 100ch;
+  }
+
+  .software ul li {
+    width: 230px;
+  }
+
+  .movies {
+    max-width: 37ch;
+  }
+
+  .movies img {
+    width: 370px;
+  }
+
+}
+
+@media (max-width: 1080px) {
+
+  .main-container {
+    flex-direction: column;
+  }
+
+  .paragraph p {
+    max-width: 100ch;
+  }
+
+  .software ul li {
+    width: 210px;
+  }
+
+  .chaewon img {
+    width: 350px;
+  }
+
+  .movies {
+    max-width: min-content;
+  }
+
+  .movies img {
+    width: 340px;
+  }
+
+}
+
+@media (max-width: 1020px) {
+
+  .main-container {
+    flex-direction: column;
+  }
+
+  .paragraph p {
+    max-width: 100ch;
+  }
+
+  .software ul li {
+    width: 190px;
+  }
+
+  .movies {
+    max-width: min-content;
+  }
+
+  .movies img {
+    width: 315px;
+  }
+
+}
+
+@media (max-width: 970px) {
+
+  .main-container {
+    flex-direction: column;
+  }
+
+  .paragraph p {
+    max-width: 100ch;
+  }
+
+  .software ul li {
+    width: 170px;
+  }
+
+  .anime-header {
+    display: flex;
+    justify-content: center;
+  }
+
+  .movies-container {
+    justify-content: center;
+  }
+
+  .movies {
+    max-width: min-content;
+  }
+
+  .movies img {
+    width: 500px;
+  }
+
+}
+
+@media (max-width: 920px) {
+
+  .main-container {
+    flex-direction: column;
+  }
+
+  .paragraph p {
+    max-width: 100ch;
+  }
+
+  .software ul li {
+    width: 150px;
+  }
+
+}
+
+@media (max-width: 860px) {
+
+  .software ul li {
+    width: 130px;
+  }
+
+}
+
+
+@media (max-width: 810px) {
+
+  .section-1 {
+    margin-top: 100px;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  .chaewon img {
+    margin-top: 50px;
+  }
+
+  .software ul li {
+    width: 110px;
+  }
+
+}
+
+@media (max-width: 755px) {
+
+  .software ul li {
+    width: 90px;
+  }
+
+}
+
+@media (max-width: 705px) {
+
+  .software ul li {
+    width: 75px;
+  }
+
+}
+
+@media (max-width: 665px) {
+
+  .software ul li {
+    width: 65px;
+  }
+
+  .movies {
+    max-width: min-content;
+  }
+
+  .movies img {
+    width: 400px;
+  }
+
+}
+
+@media (max-width: 630px) {
+
+  .software ul li {
+    width: 50px;
+  }
+
+}
+
+@media (max-width: 595px) {
+
+  .software ul {
+    flex-direction: column;
+  }
+
+  .software ul li {
+    width: auto;
+  }
+
+}
+
+
