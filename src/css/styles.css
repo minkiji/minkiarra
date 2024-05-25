@@ -793,7 +793,6 @@ main {
 
 }
 
-
 @media (max-width: 810px) {
 
   .section-1 {
@@ -804,8 +803,8 @@ main {
     flex-direction: column;
   }
 
-  .chaewon img {
-    margin-top: 50px;
+  .socials ul {
+    margin-bottom: 50px;
   }
 
   .software ul li {
