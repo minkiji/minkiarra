@@ -103,6 +103,11 @@ main {
   transition: 0.5s ease;
 }
 
+.layer a {
+  text-decoration: none;
+  color: white;
+}
+
 .chaewon:hover .layer {
   opacity: 1;
 }
