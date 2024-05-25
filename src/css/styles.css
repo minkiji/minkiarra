@@ -80,9 +80,45 @@ main {
   margin-bottom: 12px;
 }
 
+/* hover effect img */
+
+.chaewon {
+  position: relative;
+  cursor: pointer;
+}
+
+.layer {
+  display: flex;
+  position: absolute;
+  opacity: 0;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  font-weight: 800;
+  color: white;
+  font-size: 19px;
+  letter-spacing: 1.5;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transition: 0.5s ease;
+}
+
+.chaewon:hover .layer {
+  opacity: 1;
+}
+
+.chaewon:hover img {
+  filter: brightness(70%);
+  background-color: white;
+}
+
 .chaewon img {
   width: 600px;
+  border-radius: 10px;
+  transition: 0.5s ease;
 }
+
+/* -----hover effect img end----- */
 
 .socials ul {
   display: flex;
@@ -347,6 +383,18 @@ main {
 
 }
 
+@media (max-width: 1840px) {
+
+  .movies {
+    width: min-content;
+  }
+
+  .movies img {
+    width: 430px;
+  }
+
+}
+
 @media (max-width: 1790px) {
 
   .paragraph p {
@@ -365,6 +413,14 @@ main {
     width: 235px;
   }
 
+  .movies {
+    width: min-content;
+  }
+
+  .movies img {
+    width: 400px;
+  }
+
 }
 
 @media (max-width: 1690px) {
@@ -375,6 +431,18 @@ main {
 
   .software ul li {
     width: 220px;
+  }
+
+}
+
+@media (max-width: 1660px) {
+
+  .movies {
+    width: min-content;
+  }
+
+  .movies img {
+    width: 380px;
   }
 
 }
@@ -437,6 +505,10 @@ main {
 
 @media (max-width: 1460px) {
 
+  .chaewon img {
+    width: 550px;
+  }
+
   .paragraph p {
     max-width: 50ch;
   }
@@ -445,7 +517,7 @@ main {
     max-width: 37ch;
   }
 
-  .chaewon img {
+  .movies img {
     width: min-content;
   }
 
