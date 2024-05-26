@@ -402,12 +402,32 @@ main {
 
 @media (max-width: 1790px) {
 
-  .paragraph p {
-    max-width: 65ch;
-  }
-
   .software ul li {
     width: 250px;
+  }
+
+}
+
+@media (max-width: 1780px) {
+
+  .paragraph p {
+    max-width: 68ch;
+  }
+
+}
+
+@media (max-width: 1760px) {
+
+  .paragraph p {
+    max-width: 67ch;
+  }
+
+}
+
+@media (max-width: 1740px) {
+
+  .paragraph p {
+    max-width: 65ch;
   }
 
 }
@@ -431,7 +451,7 @@ main {
 @media (max-width: 1690px) {
 
   .paragraph p {
-    max-width: 60ch;
+    max-width: 62ch;
   }
 
   .software ul li {
@@ -452,11 +472,15 @@ main {
 
 }
 
-@media (max-width: 1600px) {
+@media (max-width: 1620px) {
 
   .paragraph p {
-    max-width: 57ch;
+    max-width: 58ch;
   }
+
+}
+
+@media (max-width: 1600px) {
 
   .software ul li {
     width: 210px;
