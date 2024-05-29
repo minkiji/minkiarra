@@ -160,6 +160,7 @@ main {
 
 .header-skills {
   color: #F8A8C5;
+  transform: translateY(20px);
   opacity: 0;
   transition: 1s ease;
 }
@@ -174,6 +175,7 @@ main {
 }
 
 .software {
+  transform: translateY(20px);
   opacity: 0;
   transition: 1s ease;
 }
@@ -216,6 +218,7 @@ main {
 .header {
   margin-bottom: 35px;
   color: #F8A8C5;
+  transform: translateY(20px);
   opacity: 0;
   transition: 1s ease;
 }
@@ -227,6 +230,7 @@ main {
   border-radius: 5px;
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.40);
+  transform: translateY(20px);
   z-index: 1;
   opacity: 0;
   transition: 1s ease;
@@ -917,5 +921,29 @@ main {
   
   }
 }
+
+@media (max-width: 500px) {
+
+  .anime-header {
+    font-size: 14px;
+    white-space: nowrap;
+  }
+
+  .movies {
+    max-width: min-content;
+  }
+
+  .movies img {
+    width: 305px;
+  }
+
+  .old-website {
+    text-align: center;
+  }
+
+}
+
+
+
 
 
