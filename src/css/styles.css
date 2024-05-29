@@ -317,15 +317,19 @@ main {
   transition: 0.5s ease;
 }
 
-.movies h3 {
+.movies-about {
   margin: 10px;
+}
+
+.movies h3 {
+  margin-bottom: 10px;
 }
 
 .movies p {
   font-size: 14px;
   line-height: 1.5;
   max-width: 48ch;
-  margin: 10px;
+  margin-bottom: 20px;
 }
 
 .movies img:hover {
@@ -337,7 +341,6 @@ main {
   background-color: #F8A8C5;
   border: none;
   border-radius: 5px;
-  margin: 10px;
   padding: 10px;
   cursor: pointer;
   transition: 0.5s;
@@ -923,6 +926,10 @@ main {
 }
 
 @media (max-width: 500px) {
+
+  .paragraph ul li {
+    white-space: nowrap;
+  }
 
   .anime-header {
     font-size: 14px;
